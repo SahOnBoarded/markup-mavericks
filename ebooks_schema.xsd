@@ -5,46 +5,33 @@
   <xs:element name="ebooks">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Book" type="entryType" maxOccurs="unbounded"/>
+        <!-- Book element -->
+        <xs:element name="book" minOccurs = "1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+            <!-- Title element -->
+            <xs:element name="BookTitle" type="xs:string"/>
+            <!-- Author element -->
+            <xs:element name="Author" type="xs:string"/>
+            <!-- Author dates element -->
+            <xs:element name="AuthorDates" type="YearDate"/>
+              <xs:simpleType name="YearType">
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="\d{4}-{4}"/>
+                </xs:restriction>
+              </xs:simpleType>
+            <!-- Genre element -->
+            <xs:element name="Genre" type="xs:string"/>
+            <!-- language element-->
+            <xs:element name="Language" type="xs:string" default="en"/>
+            <!-- Publishing date element -->
+            <xs:element name="Publishing_date" type="xs:date"/>
+            <!-- Release date element -->
+            <xs:element name="Release_date" type="xs:date"/>
+            </xs:sequence>
+          </xs:complexType> 
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
-  <!-- Record -->
-  <xs:complexType name="RecordType">
-    <xs:sequence>
-      <xs:element name="leader" type="xs:string"/>
-      <xs:element name="controlfield" type="ControlFieldType" maxOccurs="unbounded"/>
-      <xs:element name="datafield" type="DataFieldType" maxOccurs="unbounded"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <!-- Control field (e.g., ID) -->
-  <xs:complexType name="ControlFieldType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="tag" type="xs:string" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <!-- Data field (e.g., title, author) -->
-  <xs:complexType name="DataFieldType">
-    <xs:sequence>
-      <xs:element name="subfield" type="SubfieldType" maxOccurs="unbounded"/>
-    </xs:sequence>
-    <xs:attribute name="tag" type="xs:string" use="required"/>
-    <xs:attribute name="ind1" type="xs:string" use="optional"/>
-    <xs:attribute name="ind2" type="xs:string" use="optional"/>
-  </xs:complexType>
-
-  <!-- Subfield (e.g., actual data like author name) -->
-  <xs:complexType name="SubfieldType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="code" type="xs:string" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-</xs:schema>
+  </xs:schema>
