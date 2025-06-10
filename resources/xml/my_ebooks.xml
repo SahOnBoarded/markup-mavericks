@@ -5,9 +5,9 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <title>The Declaration of Independence of the United States of America</title>
     <Author lastname="Jefferson"  firstname="Thomas"></Author>
     <AuthorDates>1743-1826</AuthorDates>
-    <Genre>Non-fiction</Genre>
-    <Genre>History</Genre>
-    <Genre>Law</Genre>
+    <genre>Non-fiction</genre>
+    <genre>History</genre>
+    <genre>Law</genre>
     <Country>United States</Country>
     <Language>en</Language>
     <Publishing_date>1971-12-01</Publishing_date>
@@ -15,9 +15,9 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>The United States Bill of Rights The Ten Original Amendments to the Constitution of the United States</title>
-    <Genre>Non-fiction</Genre>
-    <Genre>History</Genre>
-    <Genre>Law</Genre>
+    <genre>Non-fiction</genre>
+    <genre>History</genre>
+    <genre>Law</genre>
     <Country>United States</Country>
     <Language>en</Language>
     <Publishing_date>1972-12-01</Publishing_date>
@@ -27,9 +27,9 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <title>John F. Kennedy's Inaugural Address</title>
     <Author lastname="Kennedy"  firstname="John F."></Author>
     <AuthorDates>1917-1963</AuthorDates>
-    <Genre>Non-fiction</Genre>
-    <Genre>History</Genre>
-    <Genre>Oratory</Genre>
+    <genre>Non-fiction</genre>
+    <genre>History</genre>
+    <genre>Oratory</genre>
     <Country>United States</Country>
     <Language>en</Language>
     <Publishing_date>1973-11-01</Publishing_date>
@@ -37,9 +37,9 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>North American Free Trade Agreement, 1992 Oct. 7 Tariff Phasing Descriptions</title>
-    <Genre>Non-fiction</Genre>
-    <Genre>History</Genre>
-    <Genre>Law</Genre>
+    <genre>Non-fiction</genre>
+    <genre>History</genre>
+    <genre>Law</genre>
     <Country>United States</Country>
     <language>en</language>
     <Publishing_date>1993-11-01</Publishing_date>
@@ -47,11 +47,20 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>What is Property? An Inquiry into the Principle of Right and of Government</title>
-    <author>Proudhon, P.-J. (Pierre-Joseph), 1809-1865</author>
-    <genre>Economics; Property</genre>
+    <Author lastname="Proudhon"  firstname="Pierre-Joseph"></Author>
+    <AuthorDates>1809-1865</AuthorDates>
+    <genre>Economics</genre>
     <language>en</language>
     <publishing_date>1995-11-01</publishing_date>
     <release_date>1995-11-01</release_date>
+</book>
+<book>
+    <title>La femme affranchie, vol. 1 of 2 Réponse à MM. Michelet, Proudhon, E. de Girardin, A. Comte et aux autres novateurs modernes</title>
+    <author>Héricourt, Madame d', 1809-1875</author>
+    <genre>Women's rights -- France</genre>
+    <language>fr</language>
+    <publishing_date>2016-10-18</publishing_date>
+    <release_date>2016-10-18</release_date>
 </book>
 <!-- multiple books by author Arthur Benjamin -->
 <book>
@@ -78,7 +87,6 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
-
 <!-- multiple authors -->
 <book>
     <title>The Lion and the Mouse; a Story of an American Life</title>
@@ -88,13 +96,32 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
-
 <!-- author with no dates -->
-<book><title>Tom Swift in the City of Gold; Or, Marvelous Adventures Underground</title><author>Appleton, Victor</author><genre>Adventure and adventurers -- Juvenile fiction; Swift, Tom (Fictitious character) -- Juvenile fiction; Extinct cities -- Juvenile fiction; Mexico -- Juvenile fiction</genre><language>en</language><publishing_date>2003-12-01</publishing_date><release_date>2003-12-01</release_date><pages /></book>
-
+<book>
+    <title>Tom Swift in the City of Gold; Or, Marvelous Adventures Underground</title>
+    <author>Appleton, Victor</author>
+    <genre>Adventure and adventurers -- Juvenile fiction; Swift, Tom (Fictitious character) -- Juvenile fiction; Extinct cities -- Juvenile fiction; Mexico -- Juvenile fiction</genre>
+    <language>en</language>
+    <publishing_date>2003-12-01</publishing_date>
+    <release_date>2003-12-01</release_date>
+</book>
 <!-- genre: poetry, translation-->
-<book><title>Last Poems: Translations from the Book of Indian Love</title><author>Hope, Laurence, 1865-1904</author><genre>English poetry; Love poetry; India -- Poetry</genre><language>en</language><publishing_date>2004-02-01</publishing_date><release_date>2004-02-01</release_date><pages /></book>
+<book>
+    <title>Last Poems: Translations from the Book of Indian Love</title>
+    <author>Hope, Laurence, 1865-1904</author>
+    <genre>English poetry; Love poetry; India -- Poetry</genre>
+    <language>en</language>
+    <publishing_date>2004-02-01</publishing_date>
+    <release_date>2004-02-01</release_date>
+</book>
+<book>
+    <title>The Beetle: A Mystery</title>
+    <author>Marsh, Richard, 1857-1915</author>
+    <genre>Horror tales; London (England) -- Fiction; Revenge -- Fiction; Monsters -- Fiction; Politicians -- Fiction; British -- Egypt -- Fiction; Egyptologists -- Fiction; Egypt -- Antiquities -- Collection and preservation -- Fiction; Paranormal fiction; Champnell, Augustus (Fictitious character) -- Fiction</genre>
+    <language>en</language>
+    <publishing_date>2004-02-01</publishing_date>
+    <release_date>2004-02-01</release_date>
+</book>
 
-<book><title>The Beetle: A Mystery</title><author>Marsh, Richard, 1857-1915</author><genre>Horror tales; London (England) -- Fiction; Revenge -- Fiction; Monsters -- Fiction; Politicians -- Fiction; British -- Egypt -- Fiction; Egyptologists -- Fiction; Egypt -- Antiquities -- Collection and preservation -- Fiction; Paranormal fiction; Champnell, Augustus (Fictitious character) -- Fiction</genre><language>en</language><publishing_date>2004-02-01</publishing_date><release_date>2004-02-01</release_date><pages /></book>
 
 </ebooks>
