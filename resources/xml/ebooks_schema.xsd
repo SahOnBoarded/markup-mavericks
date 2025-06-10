@@ -18,7 +18,7 @@
             <!-- Title element -->
             <xs:element name="title" type="xs:string"/>
             <!-- Author element -->
-            <xs:element name="Author" type="xs:string" minOccurs="0">
+            <xs:element name="Author" minOccurs="0">
               <xs:complexType>
                 <xs:simpleContent>
                   <xs:extension base="xs:string">
@@ -31,7 +31,7 @@
             <!-- Author dates element -->
             <xs:element name="AuthorDates" type="YearDate" minOccurs="0"/>
             <!-- Translator element -->
-            <xs:element name="Translator" type="xs:string" minOccurs="0">
+            <xs:element name="Translator" minOccurs="0">
               <xs:complexType>
                 <xs:simpleContent>
                   <xs:extension base="xs:string">
@@ -44,7 +44,7 @@
             <!-- Translator dates element -->
             <xs:element name="TranslatorDates" type="YearDate" minOccurs="0"/>
             <!-- Editor element -->
-            <xs:element name="Editor" type="xs:string" minOccurs="0">
+            <xs:element name="Editor" minOccurs="0">
               <xs:complexType>
                 <xs:simpleContent>
                   <xs:extension base="xs:string">

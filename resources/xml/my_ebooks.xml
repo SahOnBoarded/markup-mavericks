@@ -310,8 +310,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <publishing_date>2010-10-24</publishing_date>
     <release_date>2010-10-24</release_date>
 </book>
-<books>
-  <book>
+<book>
     <title>Камено доба</title>
     <Author lastname="Zujovic" firstname="Jovan"></Author>
     <AuthorDates>1856-1936</AuthorDates>
@@ -319,8 +318,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <language>sr</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
-  </book>
-  <book>
+</book>
+<book>
     <title>Секунд вечности, источњачки роман</title>
     <Author lastname="Ilić" firstname="Dragutin J."></Author>
     <AuthorDates>1858-1926</AuthorDates>
@@ -328,8 +327,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <language>sr</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
-  </book>
-  <book>
+</book>
+<book>
     <title>Mazel Tov</title>
     <Author lastname="Hochman" firstname="I. J."></Author>
     <AuthorDates></AuthorDates>
@@ -337,8 +336,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <language>yi</language>
     <publishing_date>2003-11-01</publishing_date>
     <release_date>2003-11-01</release_date>
-  </book>
-  <book>
+</book>
+<book>
     <title>粉妝樓1-10回</title>
     <Author lastname="Luo" firstname="Guanzhong"></Author>
     <AuthorDates>1330-1400</AuthorDates>
@@ -347,8 +346,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Country>China</Country>
     <publishing_date>2003-10-01</publishing_date>
     <release_date>2003-10-01</release_date>
-  </book>
-  <book>
+</book>
+<book>
     <title>Όραμα και Μεταμόρφωση : Μια εισαγωγή στο Ευγενές Οκταπλό Μονοπάτι του Βούδδα</title>
     <Author lastname="Sangharakshita" firstname="Bhikshu"></Author>
     <AuthorDates>1925-</AuthorDates>
@@ -357,8 +356,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <language>el</language>
     <publishing_date>2003-05-01</publishing_date>
     <release_date>2003-05-01</release_date>
-  </book>
-  <book>
+</book>
+<book>
     <title>Il pastor fido in lingua napolitana</title>
     <Author lastname="Guarini" firstname="Battista"></Author>
     <AuthorDates>1538-1612</AuthorDates>
@@ -367,8 +366,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <language>nap</language>
     <publishing_date>2006-02-23</publishing_date>
     <release_date>2006-02-23</release_date>
-  </book>
-  <book>
+</book>
+<book>
     <title>Le Horror Altissime</title>
     <Author lastname="Doyle" firstname="Arthur Conan"></Author>
     <AuthorDates>1859-1930</AuthorDates>
@@ -377,5 +376,5 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <language>ia</language>
     <publishing_date>2005-05-31</publishing_date>
     <release_date>2005-05-31</release_date>
-  </book>
+</book>
 </ebooks>
