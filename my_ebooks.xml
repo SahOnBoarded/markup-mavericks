@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ebooks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ebooks.xsd">
+<book>
+    <BookTitle>The Declaration of Independence of the United States of America</BookTitle>
+    <Author>Jefferson, Thomas, 1743-1826</Author>
+    <AuthorDates>1743-1826</AuthorDates>
+    <Genre>United States -- History -- Revolution, 1775-1783 -- Sources; United States. Declaration of Independence</Genre>
+    <Language>en</Language>
+    <Publishing_date>1971-12-01</Publishing_date>
+    <Release_date>1971-12-01</Release_date>
+</book>
+<book>
+    <BookTitle>The United States Bill of Rights
+The Ten Original Amendments to the Constitution of the United States</BookTitle>
+<Author>United States</Author>
+<Genre>Civil rights -- United States -- Sources; United States. Constitution. 1st-10th Amendments</Genre>
+<Language>en</Language>
+<Publishing_date>1972-12-01</Publishing_date>
+<Release_date>1972-12-01</Release_date>
+</book>
+<book>
+    <BookTitle>John F. Kennedy's Inaugural Address</BookTitle>
+    <Author>Kennedy, John F. (John Fitzgerald), 1917-1963</Author>
+    <Genre>United States -- Foreign relations -- 1961-1963; Presidents -- United States -- Inaugural addresses</Genre>
+    <Language>en</Language>
+    <Publishing_date>1973-11-01</Publishing_date>
+    <Release_date>1973-11-01</Release_date>
+</book>
+</ebooks>
