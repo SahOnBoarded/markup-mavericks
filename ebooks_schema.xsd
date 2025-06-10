@@ -1,50 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<xs:simpleType name="YearDate">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="\d{4}-\d{4}"/>
+  </xs:restriction>
+</xs:simpleType>
+
   <!-- Root element -->
   <xs:element name="ebooks">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Book" type="entryType" maxOccurs="unbounded"/>
+        <!-- Book element -->
+        <xs:element name="book" minOccurs = "1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+            <!-- Title element -->
+            <xs:element name="title" type="xs:string"/>
+            <!-- Author element -->
+            <xs:element name="Author" type="xs:string" minOccurs="0">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute name="lastName" type="xs:string"/>
+                    <xs:attribute name="firstName" type="xs:string"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <!-- Author dates element -->
+            <xs:element name="AuthorDates" type="YearDate" minOccurs="0"/>
+            <!-- Translator element -->
+            <xs:element name="Translator" type="xs:string" minOccurs="0">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute name="lastName" type="xs:string"/>
+                    <xs:attribute name="firstName" type="xs:string"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <!-- Translator dates element -->
+            <xs:element name="TranslatorDates" type="YearDate" minOccurs="0"/>
+            <!-- Genre element -->
+            <xs:element name="Genre" type="xs:string" minOccurs = "1" maxOccurs = "unbounded"/>
+            <!-- Country element -->
+            <xs:element name="Country" type="xs:string" minOccurs = "0" maxOccurs = "unbounded"/>
+            <!-- language element-->
+            <xs:element name="Language" type="xs:string" default="en" minOccurs = "1" maxOccurs = "1"/>
+            <!-- Publishing date element -->
+            <xs:element name="Publishing_date" type="xs:date" minOccurs = "1" maxOccurs = "1"/>
+            <!-- Release date element -->
+            <xs:element name="Release_date" type="xs:date" minOccurs = "1" maxOccurs = "unbounded"/>
+            </xs:sequence>
+          </xs:complexType> 
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
-  <!-- Record -->
-  <xs:complexType name="RecordType">
-    <xs:sequence>
-      <xs:element name="leader" type="xs:string"/>
-      <xs:element name="controlfield" type="ControlFieldType" maxOccurs="unbounded"/>
-      <xs:element name="datafield" type="DataFieldType" maxOccurs="unbounded"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <!-- Control field (e.g., ID) -->
-  <xs:complexType name="ControlFieldType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="tag" type="xs:string" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <!-- Data field (e.g., title, author) -->
-  <xs:complexType name="DataFieldType">
-    <xs:sequence>
-      <xs:element name="subfield" type="SubfieldType" maxOccurs="unbounded"/>
-    </xs:sequence>
-    <xs:attribute name="tag" type="xs:string" use="required"/>
-    <xs:attribute name="ind1" type="xs:string" use="optional"/>
-    <xs:attribute name="ind2" type="xs:string" use="optional"/>
-  </xs:complexType>
-
-  <!-- Subfield (e.g., actual data like author name) -->
-  <xs:complexType name="SubfieldType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="code" type="xs:string" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-</xs:schema>
+  </xs:schema>
