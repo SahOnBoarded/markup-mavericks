@@ -138,6 +138,244 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
-
-
+<book>
+    <title>Ballads and Lyrics of Old France, with Other Poems</title>
+    <Translator lastname="Lang"  firstname="Andrew"></Translator>
+    <TranslatorDates>1844-1912</TranslatorDates>
+    <genre>Poetry</genre>
+    <genre>Ballads</genre>
+    <genre>Folklore</genre>
+    <language>en</language>
+    <Country>France</Country>
+    <publishing_date>1997-01-01</publishing_date>
+    <release_date>1997-01-01</release_date>
+</book>
+<book>
+    <title>The Hymns of Martin Luther Set to Their Original Melodies, With an English Version</title>
+    <Author lastname="Luther"  firstname="Martin"></Author>
+    <AuthorDates>1483-1546</AuthorDates>
+    <Editor lastname="Allen"  firstname="Nathan H."></Editor>
+    <EditorDates>1848-1925</EditorDates>
+    <Editor lastname="Woolsey"  firstname="Leonard"></Editor>
+    <EditorDates>1830-1907</EditorDates>
+    <genre>Hymns</genre>
+    <language>de; en</language>
+    <Country>Germany</Country>
+    <publishing_date>1996-02-01</publishing_date>
+    <release_date>1996-02-01</release_date>
+</book>
+<book>
+    <title>Die Augsburger Confession</title>
+    <Author lastname="Melanchthon"  firstname="Philipp"></Author>
+    <AuthorDates>1497-1560</AuthorDates>
+    <genre>Theology</genre>
+    <genre>Doctrinal</genre>
+    <language>de; la</language>
+    <Country>Germany</Country>
+    <publishing_date>1996-07-01</publishing_date>
+    <release_date>1996-07-01</release_date>
+</book>
+<book>
+    <title>Divina Commedia di Dante: Inferno</title>
+    <Author lastname="Dante"  firstname="Alighieri"></Author>
+    <AuthorDates>1265-1321</AuthorDates>
+    <genre>Poetry</genre>
+    <language>it</language>
+    <Country>Italy</Country>
+    <publishing_date>1997-08-01</publishing_date>
+    <release_date>1997-08-01</release_date>
+</book>
+<book>
+    <title>Divina Commedia di Dante: Purgatorio</title>
+    <Author lastname="Dante"  firstname="Alighieri"></Author>
+    <AuthorDates>1265-1321</AuthorDates>
+    <genre>Poetry</genre>
+    <language>it</language>
+    <Country>Italy</Country>
+    <publishing_date>1997-08-01</publishing_date>
+    <release_date>1997-08-01</release_date>
+</book>
+<book>
+    <title>Divina Commedia di Dante: Paradiso</title>
+    <Author lastname="Dante"  firstname="Alighieri"></Author>
+    <AuthorDates>1265-1321</AuthorDates>
+    <genre>Poetry</genre>
+    <language>it</language>
+    <Country>Italy</Country>
+    <publishing_date>1997-08-01</publishing_date>
+    <release_date>1997-08-01</release_date>
+</book>
+<book>
+    <title>La Divina Commedia di Dante: Complete</title>
+    <Author lastname="Dante"  firstname="Alighieri"></Author>
+    <AuthorDates>1265-1321</AuthorDates>
+    <genre>Poetry</genre>
+    <language>it</language>
+    <Country>Italy</Country>
+    <publishing_date>1997-08-01</publishing_date>
+    <release_date>1997-08-01</release_date>
+</book>
+<book>
+    <title>Trekkerswee Met tekeninge van J.H. Pierneef</title>
+    <Author firstname="Totius"></Author>
+    <AuthorDates>1877-1953</AuthorDates>
+    <genre>Poetry</genre>
+    <language>af</language>
+    <publishing_date>2005-08-18</publishing_date>
+    <release_date>2005-08-18</release_date>
+</book>
+<book>
+    <title>Uit ou Reisbeskrywinge: Dagverhale en ander letterkundige bronne oor die Kaap</title>
+    <Author lastname="Blommaert" firstname="Willem"></Author>
+    <AuthorDates>1886-1934</AuthorDates>
+    <Author lastname="Gie" firstname="WillStefanus François Naudéem"></Author>
+    <AuthorDates>1884-1945</AuthorDates>
+    <genre>Travel</genre>
+    <genre>History</genre>
+    <language>af; nl</language>
+    <Country>South Africa</Country>
+    <publishing_date>2021-11-15</publishing_date>
+    <release_date>2021-11-15</release_date>
+</book>
+<book>
+    <title>Monumentum Ancyranum: The Deeds of Augustus</title>
+    <Author firstname="Augustus"></Author>
+    <AuthorDates>64BC-14AD</AuthorDates>
+    <Editor lastname="Fairley" firstname="William"></Editor>
+    <EditorDates>1857-1918</EditorDates>
+    <genre>History</genre>
+    <language>en; la; el</language>
+    <Country>Italy</Country>
+    <publishing_date>2021-10-22</publishing_date>
+    <release_date>2021-10-22</release_date>
+</book>
+<book>
+    <title>Catalanisches Streitgedicht zwischen En Buc und seinem Pferd</title>
+    <Editor lastname="Foerster" firstname="Wendelin"></Editor>
+    <EditorDates>1844-1915</EditorDates>
+    <genre>Poetry</genre>
+    <language>ca; de</language>
+    <publishing_date>2004-02-01</publishing_date>
+    <release_date>2004-02-01</release_date>
+</book>
+<book>
+    <title>My Life and My Efforts</title>
+    <Author lastname="May" firstname="Karl"></Author>
+    <AuthorDates>1842-1912</AuthorDates>
+    <Translator lastname="Olesch" firstname="Gunther"></Translator>
+    <genre>Biography</genre>
+    <genre>Translation</genre>
+    <language>en</language>
+    <publishing_date>2001-08-01</publishing_date>
+    <release_date>2001-08-01</release_date>
+</book>
+<book>
+    <title>The Lady from the Sea</title>
+    <Author lastname="Ibsen" firstname="Henrik"></Author>
+    <AuthorDates>1828-1906</AuthorDates>
+    <Translator lastname="Aveling" firstname="Eleanor Marx"></Translator>
+    <TranslatorDates>1855-1898</TranslatorDates>
+    <genre>Drama</genre>
+    <genre>Translation</genre>
+    <language>en</language>
+    <Country>Norway</Country>
+    <publishing_date>2001-08-01</publishing_date>
+    <release_date>2001-08-01</release_date>
+    </book>
+<book>
+    <title>Sir Gawayne and the Green Knight An Alliterative Romance-Poem (c. 1360 A.D.)</title>
+    <Editor lastname="Morris" firstname="Richard"></Editor>
+    <EditorDates>1833-1894</EditorDates>
+    <genre>Romance</genre>
+    <language>en; enm</language>
+    <publishing_date>2005-01-03</publishing_date>
+    <release_date>2005-01-03</release_date>
+</book>
+<book>
+    <title>Coinneach Odhar, Am Fiosaiche</title>
+    <Author lastname="D." firstname="Blair"></Author>
+    <AuthorDates>1815-1893</AuthorDates>
+    <genre>Prophecies</genre>
+    <genre>Coinneach Odhar</genre>
+    <language>gla</language>
+    <publishing_date>2009-05-29</publishing_date>
+    <release_date>2009-05-29</release_date>
+</book>
+<book>
+    <title>Za narodov blagor: Komedija v štirih dejanjih</title>
+    <Author lastname="k" firstname="Ivan"></Author>
+    <AuthorDates>1876-1918</AuthorDates>
+    <genre>Drama</genre>
+    <language>sl</language>
+    <publishing_date>2010-10-24</publishing_date>
+    <release_date>2010-10-24</release_date>
+</book>
+<books>
+  <book>
+    <title>Камено доба</title>
+    <Author lastname="Zujovic" firstname="Jovan"></Author>
+    <AuthorDates>1856-1936</AuthorDates>
+    <genre>Stone age</genre>
+    <language>sr</language>
+    <publishing_date>2004-02-01</publishing_date>
+    <release_date>2004-02-01</release_date>
+  </book>
+  <book>
+    <title>Секунд вечности, источњачки роман</title>
+    <Author lastname="Ilić" firstname="Dragutin J."></Author>
+    <AuthorDates>1858-1926</AuthorDates>
+    <genre>Fiction</genre>
+    <language>sr</language>
+    <publishing_date>2004-02-01</publishing_date>
+    <release_date>2004-02-01</release_date>
+  </book>
+  <book>
+    <title>Mazel Tov</title>
+    <Author lastname="Hochman" firstname="I. J."></Author>
+    <AuthorDates></AuthorDates>
+    <genre>Music</genre>
+    <language>yi</language>
+    <publishing_date>2003-11-01</publishing_date>
+    <release_date>2003-11-01</release_date>
+  </book>
+  <book>
+    <title>粉妝樓1-10回</title>
+    <Author lastname="Luo" firstname="Guanzhong"></Author>
+    <AuthorDates>1330-1400</AuthorDates>
+    <genre>History</genre>
+    <language>zh</language>
+    <Country>China</Country>
+    <publishing_date>2003-10-01</publishing_date>
+    <release_date>2003-10-01</release_date>
+  </book>
+  <book>
+    <title>Όραμα και Μεταμόρφωση : Μια εισαγωγή στο Ευγενές Οκταπλό Μονοπάτι του Βούδδα</title>
+    <Author lastname="Sangharakshita" firstname="Bhikshu"></Author>
+    <AuthorDates>1925-</AuthorDates>
+    <genre>Religious</genre>
+    <genre>Buddhism</genre>
+    <language>el</language>
+    <publishing_date>2003-05-01</publishing_date>
+    <release_date>2003-05-01</release_date>
+  </book>
+  <book>
+    <title>Il pastor fido in lingua napolitana</title>
+    <Author lastname="Guarini" firstname="Battista"></Author>
+    <AuthorDates>1538-1612</AuthorDates>
+    <genre>Drama</genre>
+    <genre>Adaptations</genre>
+    <language>nap</language>
+    <publishing_date>2006-02-23</publishing_date>
+    <release_date>2006-02-23</release_date>
+  </book>
+  <book>
+    <title>Le Horror Altissime</title>
+    <Author lastname="Doyle" firstname="Arthur Conan"></Author>
+    <AuthorDates>1859-1930</AuthorDates>
+    <genre>Horror</genre>
+    <genre>Fiction</genre>
+    <language>ia</language>
+    <publishing_date>2005-05-31</publishing_date>
+    <release_date>2005-05-31</release_date>
+  </book>
 </ebooks>

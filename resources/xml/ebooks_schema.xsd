@@ -3,7 +3,7 @@
 
 <xs:simpleType name="YearDate">
   <xs:restriction base="xs:string">
-    <xs:pattern value="\d{4}-\d{4}"/>
+    <xs:pattern value="(\d{1,4}(BC|AD)?)(-(\d{1,4}(BC|AD)?))"/>
   </xs:restriction>
 </xs:simpleType>
 
@@ -43,12 +43,25 @@
             </xs:element>
             <!-- Translator dates element -->
             <xs:element name="TranslatorDates" type="YearDate" minOccurs="0"/>
+            <!-- Editor element -->
+            <xs:element name="Editor" type="xs:string" minOccurs="0">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute name="lastName" type="xs:string"/>
+                    <xs:attribute name="firstName" type="xs:string"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <!-- Editor dates element -->
+            <xs:element name="EditorDates" type="YearDate" minOccurs="0"/>
             <!-- Genre element -->
             <xs:element name="Genre" type="xs:string" minOccurs = "1" maxOccurs = "unbounded"/>
             <!-- Country element -->
             <xs:element name="Country" type="xs:string" minOccurs = "0" maxOccurs = "unbounded"/>
             <!-- language element-->
-            <xs:element name="Language" type="xs:string" default="en" minOccurs = "1" maxOccurs = "1"/>
+            <xs:element name="Language" type="xs:string" default="en" minOccurs = "1" maxOccurs = "unbounded"/>
             <!-- Publishing date element -->
             <xs:element name="Publishing_date" type="xs:date" minOccurs = "1" maxOccurs = "1"/>
             <!-- Release date element -->
