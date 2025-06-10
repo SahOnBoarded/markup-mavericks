@@ -56,68 +56,84 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>La femme affranchie, vol. 1 of 2 Réponse à MM. Michelet, Proudhon, E. de Girardin, A. Comte et aux autres novateurs modernes</title>
-    <author>Héricourt, Madame d', 1809-1875</author>
-    <genre>Women's rights -- France</genre>
+    <Author lastname="Héricourt"  firstname="Madame d'"></Author>
+    <AuthorDates>1809-1875</AuthorDates>
+    <genre>Women's Rights</genre>
+    <Country>France</Country>
     <language>fr</language>
     <publishing_date>2016-10-18</publishing_date>
     <release_date>2016-10-18</release_date>
 </book>
-<!-- multiple books by author Arthur Benjamin -->
 <book>
     <title>The Romance of Elaine Sequel to "Exploits of Elaine"</title>
-    <author>Reeve, Arthur B. (Arthur Benjamin), 1880-1936</author>
-    <genre>New York (N.Y.) -- Fiction; Detective and mystery stories; Chemistry teachers -- Fiction; Kennedy, Craig (Fictitious character) -- Fiction</genre>
+    <Author lastname="Reeve (Benjamin)"  firstname="Arthur"></Author>
+    <AuthorDates>1880-1936</AuthorDates>
+    <genre>Fiction</genre>
+    <genre>Mystery</genre>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
 <book>
     <title>Gold of the Gods</title>
-    <author>Reeve, Arthur B. (Arthur Benjamin), 1880-1936</author>
-    <genre>Science fiction; New York (N.Y.) -- Fiction; Detective and mystery stories; Incas -- Fiction; Chemistry teachers -- Fiction; Kennedy, Craig (Fictitious character) -- Fiction</genre>
+    <Author lastname="Reeve (Benjamin)"  firstname="Arthur"></Author>
+    <AuthorDates>1880-1936</AuthorDates>
+    <genre>Fiction</genre>
+    <genre>Sci-fi</genre>
+    <genre>Mystery</genre>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
 <book>
     <title>Guy Garrick</title>
-    <author>Reeve, Arthur B. (Arthur Benjamin), 1880-1936</author>
-    <genre>Criminal investigation -- Fiction; Detective and mystery stories; Kidnapping -- Fiction; Gambling -- Fiction</genre>
+    <Author lastname="Reeve (Benjamin)"  firstname="Arthur"></Author>
+    <AuthorDates>1880-1936</AuthorDates>
+    <genre>Fiction</genre>
+    <genre>Mystery</genre>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
-<!-- multiple authors -->
 <book>
     <title>The Lion and the Mouse; a Story of an American Life</title>
-    <author>Klein, Charles, 1867-1915; Hornblow, Arthur, 1865-1942</author>
-    <genre>Revenge -- Fiction; Love stories; Children of the rich -- Fiction; Capitalists and financiers -- Fiction; United States -- ; Supreme Court justices -- Fiction</genre>
+    <Author lastname="Klein"  firstname="Charles"></Author>
+    <AuthorDates>1867-1915</AuthorDates>
+    <Author lastname="Hornblow"  firstname="Arthur"></Author>
+    <AuthorDates>1865-1942</AuthorDates>
+    <genre>Fiction</genre>
+    <genre>Revenge</genre>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
-<!-- author with no dates -->
 <book>
     <title>Tom Swift in the City of Gold; Or, Marvelous Adventures Underground</title>
-    <author>Appleton, Victor</author>
-    <genre>Adventure and adventurers -- Juvenile fiction; Swift, Tom (Fictitious character) -- Juvenile fiction; Extinct cities -- Juvenile fiction; Mexico -- Juvenile fiction</genre>
+    <Author lastname="Appleton"  firstname="Victor"></Author>
+    <genre>Fiction</genre>
+    <genre>Adventure</genre>
     <language>en</language>
     <publishing_date>2003-12-01</publishing_date>
     <release_date>2003-12-01</release_date>
 </book>
-<!-- genre: poetry, translation-->
 <book>
     <title>Last Poems: Translations from the Book of Indian Love</title>
-    <author>Hope, Laurence, 1865-1904</author>
-    <genre>English poetry; Love poetry; India -- Poetry</genre>
+    <Author lastname="Hope"  firstname="Laurence"></Author>
+    <AuthorDates>1865-1904</AuthorDates>
+    <genre>Poetry</genre>
+    <genre>Translations</genre>
+    <Country>India</Country>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
 <book>
     <title>The Beetle: A Mystery</title>
-    <author>Marsh, Richard, 1857-1915</author>
-    <genre>Horror tales; London (England) -- Fiction; Revenge -- Fiction; Monsters -- Fiction; Politicians -- Fiction; British -- Egypt -- Fiction; Egyptologists -- Fiction; Egypt -- Antiquities -- Collection and preservation -- Fiction; Paranormal fiction; Champnell, Augustus (Fictitious character) -- Fiction</genre>
+    <Author lastname="Marsh"  firstname="Richard"></Author>
+    <AuthorDates>1857-1915</AuthorDates>
+    <genre>Fiction</genre>
+    <genre>Horror</genre>
+    <Country>Egypt</Country>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
