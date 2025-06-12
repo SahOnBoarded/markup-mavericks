@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:simpleType name="YearDate">
-  <xs:restriction base="xs:string">
-    <xs:pattern value="(\d{1,4}(BC|AD)?)(-(\d{1,4}(BC|AD)?))"/>
-  </xs:restriction>
-</xs:simpleType>
-
 <xs:complexType name="AuthorType">
   <xs:simpleContent>
     <xs:extension base="xs:string">
       <xs:attribute name="lastname" type="xs:string"/>
       <xs:attribute name="firstname" type="xs:string"/>
+      <xs:attribute name="dates" type="xs:string" use="optional"/>
     </xs:extension>
   </xs:simpleContent>
 </xs:complexType>
@@ -22,16 +17,10 @@
     <xs:element name="title" type="xs:string"/>
     <!-- Author element -->
     <xs:element name="Author" type ="AuthorType" minOccurs="0" maxOccurs="unbounded"/>
-    <!-- Author dates element -->
-    <xs:element name="AuthorDates" type="YearDate" minOccurs="0" maxOccurs="unbounded"/>
     <!-- Translator element -->
     <xs:element name="Translator" type ="AuthorType" minOccurs="0" maxOccurs="unbounded"/>
-    <!-- Translator dates element -->
-    <xs:element name="TranslatorDates" type="YearDate" minOccurs="0" maxOccurs="unbounded"/>
     <!-- Editor element -->
     <xs:element name="Editor" type ="AuthorType" minOccurs="0" maxOccurs="unbounded"/>
-    <!-- Editor dates element -->
-    <xs:element name="EditorDates" type="YearDate" minOccurs="0" maxOccurs="unbounded"/>
     <!-- Genre element -->
     <xs:element name="genre" type="xs:string" minOccurs = "1" maxOccurs = "unbounded"/>
     <!-- country element -->

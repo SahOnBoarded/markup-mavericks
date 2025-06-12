@@ -3,8 +3,7 @@
 xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 <book>
     <title>The Declaration of Independence of the United States of America</title>
-    <Author lastname="Jefferson"  firstname="Thomas"></Author>
-    <AuthorDates>1743-1826</AuthorDates>
+    <Author lastname="Jefferson"  firstname="Thomas" dates = "1743-1826"></Author>
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Law</genre>
@@ -25,8 +24,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>John F. Kennedy's Inaugural Address</title>
-    <Author lastname="Kennedy"  firstname="John F."></Author>
-    <AuthorDates>1917-1963</AuthorDates>
+    <Author lastname="Kennedy"  firstname="John F." dates = "1917-1963"></Author>
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Oratory</genre>
@@ -47,8 +45,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>What is Property? An Inquiry into the Principle of Right and of Government</title>
-    <Author lastname="Proudhon"  firstname="Pierre-Joseph"></Author>
-    <AuthorDates>1809-1865</AuthorDates>
+    <Author lastname="Proudhon"  firstname="Pierre-Joseph" dates ="1809-1865"></Author>
     <genre>Economics</genre>
     <language>en</language>
     <publishing_date>1995-11-01</publishing_date>
@@ -56,8 +53,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>La femme affranchie, vol. 1 of 2 Réponse à MM. Michelet, Proudhon, E. de Girardin, A. Comte et aux autres novateurs modernes</title>
-    <Author lastname="Héricourt"  firstname="Madame d'"></Author>
-    <AuthorDates>1809-1875</AuthorDates>
+    <Author lastname="Héricourt"  firstname="Madame d'" dates = "1809-1875"></Author>
     <genre>Women's Rights</genre>
     <country>France</country>
     <language>fr</language>
@@ -66,8 +62,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>The Romance of Elaine Sequel to "Exploits of Elaine"</title>
-    <Author lastname="Reeve (Benjamin)"  firstname="Arthur"></Author>
-    <AuthorDates>1880-1936</AuthorDates>
+    <Author lastname="Reeve (Benjamin)" firstname="Arthur" dates="1880-1936"></Author>
     <genre>Fiction</genre>
     <genre>Mystery</genre>
     <language>en</language>
@@ -76,8 +71,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Gold of the Gods</title>
-    <Author lastname="Reeve (Benjamin)"  firstname="Arthur"></Author>
-    <AuthorDates>1880-1936</AuthorDates>
+    <Author lastname="Reeve (Benjamin)" firstname="Arthur" dates="1880-1936"></Author>
     <genre>Fiction</genre>
     <genre>Sci-fi</genre>
     <genre>Mystery</genre>
@@ -87,8 +81,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Guy Garrick</title>
-    <Author lastname="Reeve (Benjamin)"  firstname="Arthur"></Author>
-    <AuthorDates>1880-1936</AuthorDates>
+    <Author lastname="Reeve (Benjamin)" firstname="Arthur" dates="1880-1936"></Author>
     <genre>Fiction</genre>
     <genre>Mystery</genre>
     <language>en</language>
@@ -97,10 +90,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>The Lion and the Mouse; a Story of an American Life</title>
-    <Author lastname="Klein"  firstname="Charles"></Author>
-    <AuthorDates>1867-1915</AuthorDates>
-    <Author lastname="Hornblow"  firstname="Arthur"></Author>
-    <AuthorDates>1865-1942</AuthorDates>
+    <Author lastname="Klein" firstname="Charles" dates="1867-1915"></Author>
+    <Author lastname="Hornblow" firstname="Arthur" dates="1865-1942"></Author>
     <genre>Fiction</genre>
     <genre>Revenge</genre>
     <language>en</language>
@@ -109,7 +100,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Tom Swift in the City of Gold; Or, Marvelous Adventures Underground</title>
-    <Author lastname="Appleton"  firstname="Victor"></Author>
+    <Author lastname="Appleton" firstname="Victor"></Author>
     <genre>Fiction</genre>
     <genre>Adventure</genre>
     <language>en</language>
@@ -118,8 +109,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Last Poems: Translations from the Book of Indian Love</title>
-    <Author lastname="Hope"  firstname="Laurence"></Author>
-    <AuthorDates>1865-1904</AuthorDates>
+    <Author lastname="Hope" firstname="Laurence" dates="1865-1904"></Author>
     <genre>Poetry</genre>
     <genre>Translations</genre>
     <country>India</country>
@@ -129,8 +119,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>The Beetle: A Mystery</title>
-    <Author lastname="Marsh"  firstname="Richard"></Author>
-    <AuthorDates>1857-1915</AuthorDates>
+    <Author lastname="Marsh" firstname="Richard" dates="1857-1915"></Author>
     <genre>Fiction</genre>
     <genre>Horror</genre>
     <country>Egypt</country>
@@ -140,8 +129,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Ballads and Lyrics of Old France, with Other Poems</title>
-    <Translator lastname="Lang"  firstname="Andrew"></Translator>
-    <TranslatorDates>1844-1912</TranslatorDates>
+    <Translator lastname="Lang" firstname="Andrew" dates="1844-1912"></Translator>
     <genre>Poetry</genre>
     <genre>Ballads</genre>
     <genre>Folklore</genre>
@@ -152,12 +140,9 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>The Hymns of Martin Luther Set to Their Original Melodies, With an English Version</title>
-    <Author lastname="Luther"  firstname="Martin"></Author>
-    <AuthorDates>1483-1546</AuthorDates>
-    <Editor lastname="Allen"  firstname="Nathan H."></Editor>
-    <EditorDates>1848-1925</EditorDates>
-    <Editor lastname="Woolsey"  firstname="Leonard"></Editor>
-    <EditorDates>1830-1907</EditorDates>
+    <Author lastname="Luther" firstname="Martin" dates="1483-1546"></Author>
+    <Editor lastname="Allen" firstname="Nathan H." dates="1848-1925"></Editor>
+    <Editor lastname="Woolsey" firstname="Leonard" dates="1830-1907"></Editor>
     <genre>Hymns</genre>
     <country>Germany</country>
     <language>de; en</language>
@@ -166,8 +151,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Die Augsburger Confession</title>
-    <Author lastname="Melanchthon"  firstname="Philipp"></Author>
-    <AuthorDates>1497-1560</AuthorDates>
+    <Author lastname="Melanchthon" firstname="Philipp" dates="1497-1560"></Author>
     <genre>Theology</genre>
     <genre>Doctrinal</genre>
     <country>Germany</country>
@@ -177,8 +161,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Divina Commedia di Dante: Inferno</title>
-    <Author lastname="Dante"  firstname="Alighieri"></Author>
-    <AuthorDates>1265-1321</AuthorDates>
+    <Author lastname="Dante" firstname="Alighieri" dates="1265-1321"></Author>
     <genre>Poetry</genre>
     <country>Italy</country>
     <language>it</language>
@@ -187,8 +170,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Divina Commedia di Dante: Purgatorio</title>
-    <Author lastname="Dante"  firstname="Alighieri"></Author>
-    <AuthorDates>1265-1321</AuthorDates>
+    <Author lastname="Dante" firstname="Alighieri" dates="1265-1321"></Author>
     <genre>Poetry</genre>
     <country>Italy</country>
     <language>it</language>
@@ -197,8 +179,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Divina Commedia di Dante: Paradiso</title>
-    <Author lastname="Dante"  firstname="Alighieri"></Author>
-    <AuthorDates>1265-1321</AuthorDates>
+    <Author lastname="Dante" firstname="Alighieri" dates="1265-1321"></Author>
     <genre>Poetry</genre>
     <country>Italy</country>
     <language>it</language>
@@ -207,8 +188,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>La Divina Commedia di Dante: Complete</title>
-    <Author lastname="Dante"  firstname="Alighieri"></Author>
-    <AuthorDates>1265-1321</AuthorDates>
+    <Author lastname="Dante" firstname="Alighieri" dates="1265-1321"></Author>
     <genre>Poetry</genre>
     <country>Italy</country>
     <language>it</language>
@@ -217,8 +197,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Trekkerswee Met tekeninge van J.H. Pierneef</title>
-    <Author firstname="Totius"></Author>
-    <AuthorDates>1877-1953</AuthorDates>
+    <Author firstname="Totius" dates="1877-1953"></Author>
     <genre>Poetry</genre>
     <language>af</language>
     <publishing_date>2005-08-18</publishing_date>
@@ -226,10 +205,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Uit ou Reisbeskrywinge: Dagverhale en ander letterkundige bronne oor die Kaap</title>
-    <Author lastname="Blommaert" firstname="Willem"></Author>
-    <AuthorDates>1886-1934</AuthorDates>
-    <Author lastname="Gie" firstname="WillStefanus François Naudéem"></Author>
-    <AuthorDates>1884-1945</AuthorDates>
+    <Author lastname="Blommaert" firstname="Willem" dates="1886-1934"></Author>
+    <Author lastname="Gie" firstname="WillStefanus François Naudéem" dates="1884-1945"></Author>
     <genre>Travel</genre>
     <genre>History</genre>
     <country>South Africa</country>
@@ -239,10 +216,9 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Monumentum Ancyranum: The Deeds of Augustus</title>
-    <Author firstname="Augustus"></Author>
-    <AuthorDates>64BC-14AD</AuthorDates>
-    <Editor lastname="Fairley" firstname="William"></Editor>
-    <EditorDates>1857-1918</EditorDates>
+    <Author firstname="Augustus" dates="64BC-14AD"></Author>
+    <Editor lastname="Fairley" firstname="William" dates="1857-1918"></Editor>
+    <Editor lastname="Woolsey" firstname="Leonard" dates="1830-1907"></Editor>
     <genre>History</genre>
     <country>Italy</country>
     <language>en; la; el</language>
@@ -251,8 +227,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Catalanisches Streitgedicht zwischen En Buc und seinem Pferd</title>
-    <Editor lastname="Foerster" firstname="Wendelin"></Editor>
-    <EditorDates>1844-1915</EditorDates>
+    <Editor lastname="Foerster" firstname="Wendelin" dates="1844-1915"></Editor>
     <genre>Poetry</genre>
     <language>ca; de</language>
     <publishing_date>2004-02-01</publishing_date>
@@ -260,8 +235,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>My Life and My Efforts</title>
-    <Author lastname="May" firstname="Karl"></Author>
-    <AuthorDates>1842-1912</AuthorDates>
+    <Author lastname="May" firstname="Karl" dates="1842-1912"></Author>
     <Translator lastname="Olesch" firstname="Gunther"></Translator>
     <genre>Biography</genre>
     <genre>Translation</genre>
@@ -271,21 +245,18 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>The Lady from the Sea</title>
-    <Author lastname="Ibsen" firstname="Henrik"></Author>
-    <AuthorDates>1828-1906</AuthorDates>
-    <Translator lastname="Aveling" firstname="Eleanor Marx"></Translator>
-    <TranslatorDates>1855-1898</TranslatorDates>
+    <Author lastname="Ibsen" firstname="Henrik" dates="1828-1906"></Author>
+    <Translator lastname="Aveling" firstname="Eleanor Marx" dates="1855-1898"></Translator>
     <genre>Drama</genre>
     <genre>Translation</genre>
     <country>Norway</country>
     <language>en</language>
     <publishing_date>2001-08-01</publishing_date>
     <release_date>2001-08-01</release_date>
-    </book>
+</book>
 <book>
     <title>Sir Gawayne and the Green Knight An Alliterative Romance-Poem (c. 1360 A.D.)</title>
-    <Editor lastname="Morris" firstname="Richard"></Editor>
-    <EditorDates>1833-1894</EditorDates>
+    <Editor lastname="Morris" firstname="Richard" dates="1833-1894"></Editor>
     <genre>Romance</genre>
     <language>en; enm</language>
     <publishing_date>2005-01-03</publishing_date>
@@ -293,8 +264,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Coinneach Odhar, Am Fiosaiche</title>
-    <Author lastname="D." firstname="Blair"></Author>
-    <AuthorDates>1815-1893</AuthorDates>
+    <Author lastname="D." firstname="Blair" dates="1815-1893"></Author>
     <genre>Prophecies</genre>
     <genre>Coinneach Odhar</genre>
     <language>gla</language>
@@ -303,8 +273,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Za narodov blagor: Komedija v štirih dejanjih</title>
-    <Author lastname="k" firstname="Ivan"></Author>
-    <AuthorDates>1876-1918</AuthorDates>
+    <Author lastname="k" firstname="Ivan" dates="1876-1918"></Author>
     <genre>Drama</genre>
     <language>sl</language>
     <publishing_date>2010-10-24</publishing_date>
@@ -312,8 +281,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Камено доба</title>
-    <Author lastname="Zujovic" firstname="Jovan"></Author>
-    <AuthorDates>1856-1936</AuthorDates>
+    <Author lastname="Zujovic" firstname="Jovan" dates="1856-1936"></Author>
     <genre>Stone age</genre>
     <language>sr</language>
     <publishing_date>2004-02-01</publishing_date>
@@ -321,8 +289,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Секунд вечности, источњачки роман</title>
-    <Author lastname="Ilić" firstname="Dragutin J."></Author>
-    <AuthorDates>1858-1926</AuthorDates>
+    <Author lastname="Ilić" firstname="Dragutin J." dates="1858-1926"></Author>
     <genre>Fiction</genre>
     <language>sr</language>
     <publishing_date>2004-02-01</publishing_date>
@@ -338,8 +305,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>粉妝樓1-10回</title>
-    <Author lastname="Luo" firstname="Guanzhong"></Author>
-    <AuthorDates>1330-1400</AuthorDates>
+    <Author lastname="Luo" firstname="Guanzhong" dates="1330-1400"></Author>
     <genre>History</genre>
     <country>China</country>
     <language>zh</language>
@@ -349,16 +315,14 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 <book>
     <title>Όραμα και Μεταμόρφωση : Μια εισαγωγή στο Ευγενές Οκταπλό Μονοπάτι του Βούδδα</title>
     <Author lastname="Sangharakshita" firstname="Bhikshu"></Author>
-    <genre>Religious</genre>
-    <genre>Buddhism</genre>
+    <genre>Philosophy</genre>
     <language>el</language>
-    <publishing_date>2003-05-01</publishing_date>
-    <release_date>2003-05-01</release_date>
+    <publishing_date>2005-07-07</publishing_date>
+    <release_date>2005-07-07</release_date>
 </book>
 <book>
     <title>Il pastor fido in lingua napolitana</title>
-    <Author lastname="Guarini" firstname="Battista"></Author>
-    <AuthorDates>1538-1612</AuthorDates>
+    <Author lastname="Guarini" firstname="Battista" dates ="1538-1612"></Author>
     <genre>Drama</genre>
     <genre>Adaptations</genre>
     <language>nap</language>
@@ -367,8 +331,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>Le Horror Altissime</title>
-    <Author lastname="Doyle" firstname="Arthur Conan"></Author>
-    <AuthorDates>1859-1930</AuthorDates>
+    <Author lastname="Doyle" firstname="Arthur Conan" dates ="1859-1930"></Author>
     <genre>Horror</genre>
     <genre>Fiction</genre>
     <language>ia</language>
