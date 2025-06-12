@@ -8,20 +8,20 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Law</genre>
-    <Country>United States</Country>
-    <Language>en</Language>
-    <Publishing_date>1971-12-01</Publishing_date>
-    <Release_date>1971-12-01</Release_date>
+    <country>United States</country>
+    <language>en</language>
+    <publishing_date>1971-12-01</publishing_date>
+    <release_date>1971-12-01</release_date>
 </book>
 <book>
     <title>The United States Bill of Rights The Ten Original Amendments to the Constitution of the United States</title>
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Law</genre>
-    <Country>United States</Country>
-    <Language>en</Language>
-    <Publishing_date>1972-12-01</Publishing_date>
-    <Release_date>1972-12-01</Release_date>
+    <country>United States</country>
+    <language>en</language>
+    <publishing_date>1972-12-01</publishing_date>
+    <release_date>1972-12-01</release_date>
 </book>
 <book>
     <title>John F. Kennedy's Inaugural Address</title>
@@ -30,20 +30,20 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Oratory</genre>
-    <Country>United States</Country>
-    <Language>en</Language>
-    <Publishing_date>1973-11-01</Publishing_date>
-    <Release_date>1973-11-01</Release_date>
+    <country>United States</country>
+    <language>en</language>
+    <publishing_date>1973-11-01</publishing_date>
+    <release_date>1973-11-01</release_date>
 </book>
 <book>
     <title>North American Free Trade Agreement, 1992 Oct. 7 Tariff Phasing Descriptions</title>
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Law</genre>
-    <Country>United States</Country>
+    <country>United States</country>
     <language>en</language>
-    <Publishing_date>1993-11-01</Publishing_date>
-    <Release_date>1993-11-01</Release_date>
+    <publishing_date>1993-11-01</publishing_date>
+    <release_date>1993-11-01</release_date>
 </book>
 <book>
     <title>What is Property? An Inquiry into the Principle of Right and of Government</title>
@@ -59,7 +59,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Author lastname="Héricourt"  firstname="Madame d'"></Author>
     <AuthorDates>1809-1875</AuthorDates>
     <genre>Women's Rights</genre>
-    <Country>France</Country>
+    <country>France</country>
     <language>fr</language>
     <publishing_date>2016-10-18</publishing_date>
     <release_date>2016-10-18</release_date>
@@ -122,7 +122,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <AuthorDates>1865-1904</AuthorDates>
     <genre>Poetry</genre>
     <genre>Translations</genre>
-    <Country>India</Country>
+    <country>India</country>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
@@ -133,7 +133,7 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <AuthorDates>1857-1915</AuthorDates>
     <genre>Fiction</genre>
     <genre>Horror</genre>
-    <Country>Egypt</Country>
+    <country>Egypt</country>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
@@ -145,8 +145,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <genre>Poetry</genre>
     <genre>Ballads</genre>
     <genre>Folklore</genre>
+    <country>France</country>
     <language>en</language>
-    <Country>France</Country>
     <publishing_date>1997-01-01</publishing_date>
     <release_date>1997-01-01</release_date>
 </book>
@@ -159,8 +159,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Editor lastname="Woolsey"  firstname="Leonard"></Editor>
     <EditorDates>1830-1907</EditorDates>
     <genre>Hymns</genre>
+    <country>Germany</country>
     <language>de; en</language>
-    <Country>Germany</Country>
     <publishing_date>1996-02-01</publishing_date>
     <release_date>1996-02-01</release_date>
 </book>
@@ -170,8 +170,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <AuthorDates>1497-1560</AuthorDates>
     <genre>Theology</genre>
     <genre>Doctrinal</genre>
+    <country>Germany</country>
     <language>de; la</language>
-    <Country>Germany</Country>
     <publishing_date>1996-07-01</publishing_date>
     <release_date>1996-07-01</release_date>
 </book>
@@ -180,8 +180,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Author lastname="Dante"  firstname="Alighieri"></Author>
     <AuthorDates>1265-1321</AuthorDates>
     <genre>Poetry</genre>
+    <country>Italy</country>
     <language>it</language>
-    <Country>Italy</Country>
     <publishing_date>1997-08-01</publishing_date>
     <release_date>1997-08-01</release_date>
 </book>
@@ -190,8 +190,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Author lastname="Dante"  firstname="Alighieri"></Author>
     <AuthorDates>1265-1321</AuthorDates>
     <genre>Poetry</genre>
+    <country>Italy</country>
     <language>it</language>
-    <Country>Italy</Country>
     <publishing_date>1997-08-01</publishing_date>
     <release_date>1997-08-01</release_date>
 </book>
@@ -200,8 +200,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Author lastname="Dante"  firstname="Alighieri"></Author>
     <AuthorDates>1265-1321</AuthorDates>
     <genre>Poetry</genre>
+    <country>Italy</country>
     <language>it</language>
-    <Country>Italy</Country>
     <publishing_date>1997-08-01</publishing_date>
     <release_date>1997-08-01</release_date>
 </book>
@@ -210,8 +210,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Author lastname="Dante"  firstname="Alighieri"></Author>
     <AuthorDates>1265-1321</AuthorDates>
     <genre>Poetry</genre>
+    <country>Italy</country>
     <language>it</language>
-    <Country>Italy</Country>
     <publishing_date>1997-08-01</publishing_date>
     <release_date>1997-08-01</release_date>
 </book>
@@ -232,8 +232,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <AuthorDates>1884-1945</AuthorDates>
     <genre>Travel</genre>
     <genre>History</genre>
+    <country>South Africa</country>
     <language>af; nl</language>
-    <Country>South Africa</Country>
     <publishing_date>2021-11-15</publishing_date>
     <release_date>2021-11-15</release_date>
 </book>
@@ -244,8 +244,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Editor lastname="Fairley" firstname="William"></Editor>
     <EditorDates>1857-1918</EditorDates>
     <genre>History</genre>
+    <country>Italy</country>
     <language>en; la; el</language>
-    <Country>Italy</Country>
     <publishing_date>2021-10-22</publishing_date>
     <release_date>2021-10-22</release_date>
 </book>
@@ -277,8 +277,8 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <TranslatorDates>1855-1898</TranslatorDates>
     <genre>Drama</genre>
     <genre>Translation</genre>
+    <country>Norway</country>
     <language>en</language>
-    <Country>Norway</Country>
     <publishing_date>2001-08-01</publishing_date>
     <release_date>2001-08-01</release_date>
     </book>
@@ -331,7 +331,6 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 <book>
     <title>Mazel Tov</title>
     <Author lastname="Hochman" firstname="I. J."></Author>
-    <AuthorDates></AuthorDates>
     <genre>Music</genre>
     <language>yi</language>
     <publishing_date>2003-11-01</publishing_date>
@@ -342,15 +341,14 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
     <Author lastname="Luo" firstname="Guanzhong"></Author>
     <AuthorDates>1330-1400</AuthorDates>
     <genre>History</genre>
+    <country>China</country>
     <language>zh</language>
-    <Country>China</Country>
     <publishing_date>2003-10-01</publishing_date>
     <release_date>2003-10-01</release_date>
 </book>
 <book>
     <title>Όραμα και Μεταμόρφωση : Μια εισαγωγή στο Ευγενές Οκταπλό Μονοπάτι του Βούδδα</title>
     <Author lastname="Sangharakshita" firstname="Bhikshu"></Author>
-    <AuthorDates>1925-</AuthorDates>
     <genre>Religious</genre>
     <genre>Buddhism</genre>
     <language>el</language>
