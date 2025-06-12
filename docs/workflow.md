@@ -27,11 +27,9 @@ Usecases/research questionnaire:
 6. list of countries and their count of books
 7. List of languages
 8. authors with no dates available
--> 
 9. books that are translated
 -> genre = Translation
-10. authors with date 1915
--> Klein charles and Richard Marsh
+10. list of translators and editors
 11. list of books having languages more than one
 -> af;nl
 -> en; la; el
