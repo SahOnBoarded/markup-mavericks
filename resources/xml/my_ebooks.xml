@@ -3,52 +3,49 @@
 xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 <book>
     <title>The Declaration of Independence of the United States of America</title>
-    <Author lastname="Jefferson"  firstname="Thomas"></Author>
-    <AuthorDates>1743-1826</AuthorDates>
+    <Author lastname="Jefferson"  firstname="Thomas" dates = "1743-1826"></Author>
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Law</genre>
-    <Country>United States</Country>
-    <Language>en</Language>
-    <Publishing_date>1971-12-01</Publishing_date>
-    <Release_date>1971-12-01</Release_date>
+    <country>United States</country>
+    <language>en</language>
+    <publishing_date>1971-12-01</publishing_date>
+    <release_date>1971-12-01</release_date>
 </book>
 <book>
     <title>The United States Bill of Rights The Ten Original Amendments to the Constitution of the United States</title>
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Law</genre>
-    <Country>United States</Country>
-    <Language>en</Language>
-    <Publishing_date>1972-12-01</Publishing_date>
-    <Release_date>1972-12-01</Release_date>
+    <country>United States</country>
+    <language>en</language>
+    <publishing_date>1972-12-01</publishing_date>
+    <release_date>1972-12-01</release_date>
 </book>
 <book>
     <title>John F. Kennedy's Inaugural Address</title>
-    <Author lastname="Kennedy"  firstname="John F."></Author>
-    <AuthorDates>1917-1963</AuthorDates>
+    <Author lastname="Kennedy"  firstname="John F." dates = "1917-1963"></Author>
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Oratory</genre>
-    <Country>United States</Country>
-    <Language>en</Language>
-    <Publishing_date>1973-11-01</Publishing_date>
-    <Release_date>1973-11-01</Release_date>
+    <country>United States</country>
+    <language>en</language>
+    <publishing_date>1973-11-01</publishing_date>
+    <release_date>1973-11-01</release_date>
 </book>
 <book>
     <title>North American Free Trade Agreement, 1992 Oct. 7 Tariff Phasing Descriptions</title>
     <genre>Non-fiction</genre>
     <genre>History</genre>
     <genre>Law</genre>
-    <Country>United States</Country>
+    <country>United States</country>
     <language>en</language>
-    <Publishing_date>1993-11-01</Publishing_date>
-    <Release_date>1993-11-01</Release_date>
+    <publishing_date>1993-11-01</publishing_date>
+    <release_date>1993-11-01</release_date>
 </book>
 <book>
     <title>What is Property? An Inquiry into the Principle of Right and of Government</title>
-    <Author lastname="Proudhon"  firstname="Pierre-Joseph"></Author>
-    <AuthorDates>1809-1865</AuthorDates>
+    <Author lastname="Proudhon"  firstname="Pierre-Joseph" dates ="1809-1865"></Author>
     <genre>Economics</genre>
     <language>en</language>
     <publishing_date>1995-11-01</publishing_date>
@@ -56,72 +53,289 @@ xsi:noNamespaceSchemaLocation="ebooks_schema.xsd">
 </book>
 <book>
     <title>La femme affranchie, vol. 1 of 2 Réponse à MM. Michelet, Proudhon, E. de Girardin, A. Comte et aux autres novateurs modernes</title>
-    <author>Héricourt, Madame d', 1809-1875</author>
-    <genre>Women's rights -- France</genre>
+    <Author lastname="Héricourt"  firstname="Madame d'" dates = "1809-1875"></Author>
+    <genre>Women's Rights</genre>
+    <country>France</country>
     <language>fr</language>
     <publishing_date>2016-10-18</publishing_date>
     <release_date>2016-10-18</release_date>
 </book>
-<!-- multiple books by author Arthur Benjamin -->
 <book>
     <title>The Romance of Elaine Sequel to "Exploits of Elaine"</title>
-    <author>Reeve, Arthur B. (Arthur Benjamin), 1880-1936</author>
-    <genre>New York (N.Y.) -- Fiction; Detective and mystery stories; Chemistry teachers -- Fiction; Kennedy, Craig (Fictitious character) -- Fiction</genre>
+    <Author lastname="Reeve (Benjamin)" firstname="Arthur" dates="1880-1936"></Author>
+    <genre>Fiction</genre>
+    <genre>Mystery</genre>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
 <book>
     <title>Gold of the Gods</title>
-    <author>Reeve, Arthur B. (Arthur Benjamin), 1880-1936</author>
-    <genre>Science fiction; New York (N.Y.) -- Fiction; Detective and mystery stories; Incas -- Fiction; Chemistry teachers -- Fiction; Kennedy, Craig (Fictitious character) -- Fiction</genre>
+    <Author lastname="Reeve (Benjamin)" firstname="Arthur" dates="1880-1936"></Author>
+    <genre>Fiction</genre>
+    <genre>Sci-fi</genre>
+    <genre>Mystery</genre>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
 <book>
     <title>Guy Garrick</title>
-    <author>Reeve, Arthur B. (Arthur Benjamin), 1880-1936</author>
-    <genre>Criminal investigation -- Fiction; Detective and mystery stories; Kidnapping -- Fiction; Gambling -- Fiction</genre>
+    <Author lastname="Reeve (Benjamin)" firstname="Arthur" dates="1880-1936"></Author>
+    <genre>Fiction</genre>
+    <genre>Mystery</genre>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
-<!-- multiple authors -->
 <book>
     <title>The Lion and the Mouse; a Story of an American Life</title>
-    <author>Klein, Charles, 1867-1915; Hornblow, Arthur, 1865-1942</author>
-    <genre>Revenge -- Fiction; Love stories; Children of the rich -- Fiction; Capitalists and financiers -- Fiction; United States -- ; Supreme Court justices -- Fiction</genre>
+    <Author lastname="Klein" firstname="Charles" dates="1867-1915"></Author>
+    <Author lastname="Hornblow" firstname="Arthur" dates="1865-1942"></Author>
+    <genre>Fiction</genre>
+    <genre>Revenge</genre>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
-<!-- author with no dates -->
 <book>
     <title>Tom Swift in the City of Gold; Or, Marvelous Adventures Underground</title>
-    <author>Appleton, Victor</author>
-    <genre>Adventure and adventurers -- Juvenile fiction; Swift, Tom (Fictitious character) -- Juvenile fiction; Extinct cities -- Juvenile fiction; Mexico -- Juvenile fiction</genre>
+    <Author lastname="Appleton" firstname="Victor"></Author>
+    <genre>Fiction</genre>
+    <genre>Adventure</genre>
     <language>en</language>
     <publishing_date>2003-12-01</publishing_date>
     <release_date>2003-12-01</release_date>
 </book>
-<!-- genre: poetry, translation-->
 <book>
     <title>Last Poems: Translations from the Book of Indian Love</title>
-    <author>Hope, Laurence, 1865-1904</author>
-    <genre>English poetry; Love poetry; India -- Poetry</genre>
+    <Author lastname="Hope" firstname="Laurence" dates="1865-1904"></Author>
+    <genre>Poetry</genre>
+    <genre>Translations</genre>
+    <country>India</country>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
 <book>
     <title>The Beetle: A Mystery</title>
-    <author>Marsh, Richard, 1857-1915</author>
-    <genre>Horror tales; London (England) -- Fiction; Revenge -- Fiction; Monsters -- Fiction; Politicians -- Fiction; British -- Egypt -- Fiction; Egyptologists -- Fiction; Egypt -- Antiquities -- Collection and preservation -- Fiction; Paranormal fiction; Champnell, Augustus (Fictitious character) -- Fiction</genre>
+    <Author lastname="Marsh" firstname="Richard" dates="1857-1915"></Author>
+    <genre>Fiction</genre>
+    <genre>Horror</genre>
+    <country>Egypt</country>
     <language>en</language>
     <publishing_date>2004-02-01</publishing_date>
     <release_date>2004-02-01</release_date>
 </book>
-
-
+<book>
+    <title>Ballads and Lyrics of Old France, with Other Poems</title>
+    <Translator lastname="Lang" firstname="Andrew" dates="1844-1912"></Translator>
+    <genre>Poetry</genre>
+    <genre>Ballads</genre>
+    <genre>Folklore</genre>
+    <country>France</country>
+    <language>en</language>
+    <publishing_date>1997-01-01</publishing_date>
+    <release_date>1997-01-01</release_date>
+</book>
+<book>
+    <title>The Hymns of Martin Luther Set to Their Original Melodies, With an English Version</title>
+    <Author lastname="Luther" firstname="Martin" dates="1483-1546"></Author>
+    <Editor lastname="Allen" firstname="Nathan H." dates="1848-1925"></Editor>
+    <Editor lastname="Woolsey" firstname="Leonard" dates="1830-1907"></Editor>
+    <genre>Hymns</genre>
+    <country>Germany</country>
+    <language>de; en</language>
+    <publishing_date>1996-02-01</publishing_date>
+    <release_date>1996-02-01</release_date>
+</book>
+<book>
+    <title>Die Augsburger Confession</title>
+    <Author lastname="Melanchthon" firstname="Philipp" dates="1497-1560"></Author>
+    <genre>Theology</genre>
+    <genre>Doctrinal</genre>
+    <country>Germany</country>
+    <language>de; la</language>
+    <publishing_date>1996-07-01</publishing_date>
+    <release_date>1996-07-01</release_date>
+</book>
+<book>
+    <title>Divina Commedia di Dante: Inferno</title>
+    <Author lastname="Dante" firstname="Alighieri" dates="1265-1321"></Author>
+    <genre>Poetry</genre>
+    <country>Italy</country>
+    <language>it</language>
+    <publishing_date>1997-08-01</publishing_date>
+    <release_date>1997-08-01</release_date>
+</book>
+<book>
+    <title>Divina Commedia di Dante: Purgatorio</title>
+    <Author lastname="Dante" firstname="Alighieri" dates="1265-1321"></Author>
+    <genre>Poetry</genre>
+    <country>Italy</country>
+    <language>it</language>
+    <publishing_date>1997-08-01</publishing_date>
+    <release_date>1997-08-01</release_date>
+</book>
+<book>
+    <title>Divina Commedia di Dante: Paradiso</title>
+    <Author lastname="Dante" firstname="Alighieri" dates="1265-1321"></Author>
+    <genre>Poetry</genre>
+    <country>Italy</country>
+    <language>it</language>
+    <publishing_date>1997-08-01</publishing_date>
+    <release_date>1997-08-01</release_date>
+</book>
+<book>
+    <title>La Divina Commedia di Dante: Complete</title>
+    <Author lastname="Dante" firstname="Alighieri" dates="1265-1321"></Author>
+    <genre>Poetry</genre>
+    <country>Italy</country>
+    <language>it</language>
+    <publishing_date>1997-08-01</publishing_date>
+    <release_date>1997-08-01</release_date>
+</book>
+<book>
+    <title>Trekkerswee Met tekeninge van J.H. Pierneef</title>
+    <Author firstname="Totius" dates="1877-1953"></Author>
+    <genre>Poetry</genre>
+    <language>af</language>
+    <publishing_date>2005-08-18</publishing_date>
+    <release_date>2005-08-18</release_date>
+</book>
+<book>
+    <title>Uit ou Reisbeskrywinge: Dagverhale en ander letterkundige bronne oor die Kaap</title>
+    <Author lastname="Blommaert" firstname="Willem" dates="1886-1934"></Author>
+    <Author lastname="Gie" firstname="WillStefanus François Naudéem" dates="1884-1945"></Author>
+    <genre>Travel</genre>
+    <genre>History</genre>
+    <country>South Africa</country>
+    <language>af; nl</language>
+    <publishing_date>2021-11-15</publishing_date>
+    <release_date>2021-11-15</release_date>
+</book>
+<book>
+    <title>Monumentum Ancyranum: The Deeds of Augustus</title>
+    <Author firstname="Augustus" dates="64BC-14AD"></Author>
+    <Editor lastname="Fairley" firstname="William" dates="1857-1918"></Editor>
+    <Editor lastname="Woolsey" firstname="Leonard" dates="1830-1907"></Editor>
+    <genre>History</genre>
+    <country>Italy</country>
+    <language>en; la; el</language>
+    <publishing_date>2021-10-22</publishing_date>
+    <release_date>2021-10-22</release_date>
+</book>
+<book>
+    <title>Catalanisches Streitgedicht zwischen En Buc und seinem Pferd</title>
+    <Editor lastname="Foerster" firstname="Wendelin" dates="1844-1915"></Editor>
+    <genre>Poetry</genre>
+    <language>ca; de</language>
+    <publishing_date>2004-02-01</publishing_date>
+    <release_date>2004-02-01</release_date>
+</book>
+<book>
+    <title>My Life and My Efforts</title>
+    <Author lastname="May" firstname="Karl" dates="1842-1912"></Author>
+    <Translator lastname="Olesch" firstname="Gunther"></Translator>
+    <genre>Biography</genre>
+    <genre>Translation</genre>
+    <language>en</language>
+    <publishing_date>2001-08-01</publishing_date>
+    <release_date>2001-08-01</release_date>
+</book>
+<book>
+    <title>The Lady from the Sea</title>
+    <Author lastname="Ibsen" firstname="Henrik" dates="1828-1906"></Author>
+    <Translator lastname="Aveling" firstname="Eleanor Marx" dates="1855-1898"></Translator>
+    <genre>Drama</genre>
+    <genre>Translation</genre>
+    <country>Norway</country>
+    <language>en</language>
+    <publishing_date>2001-08-01</publishing_date>
+    <release_date>2001-08-01</release_date>
+</book>
+<book>
+    <title>Sir Gawayne and the Green Knight An Alliterative Romance-Poem (c. 1360 A.D.)</title>
+    <Editor lastname="Morris" firstname="Richard" dates="1833-1894"></Editor>
+    <genre>Romance</genre>
+    <language>en; enm</language>
+    <publishing_date>2005-01-03</publishing_date>
+    <release_date>2005-01-03</release_date>
+</book>
+<book>
+    <title>Coinneach Odhar, Am Fiosaiche</title>
+    <Author lastname="D." firstname="Blair" dates="1815-1893"></Author>
+    <genre>Prophecies</genre>
+    <genre>Coinneach Odhar</genre>
+    <language>gla</language>
+    <publishing_date>2009-05-29</publishing_date>
+    <release_date>2009-05-29</release_date>
+</book>
+<book>
+    <title>Za narodov blagor: Komedija v štirih dejanjih</title>
+    <Author lastname="k" firstname="Ivan" dates="1876-1918"></Author>
+    <genre>Drama</genre>
+    <language>sl</language>
+    <publishing_date>2010-10-24</publishing_date>
+    <release_date>2010-10-24</release_date>
+</book>
+<book>
+    <title>Камено доба</title>
+    <Author lastname="Zujovic" firstname="Jovan" dates="1856-1936"></Author>
+    <genre>Stone age</genre>
+    <language>sr</language>
+    <publishing_date>2004-02-01</publishing_date>
+    <release_date>2004-02-01</release_date>
+</book>
+<book>
+    <title>Секунд вечности, источњачки роман</title>
+    <Author lastname="Ilić" firstname="Dragutin J." dates="1858-1926"></Author>
+    <genre>Fiction</genre>
+    <language>sr</language>
+    <publishing_date>2004-02-01</publishing_date>
+    <release_date>2004-02-01</release_date>
+</book>
+<book>
+    <title>Mazel Tov</title>
+    <Author lastname="Hochman" firstname="I. J."></Author>
+    <genre>Music</genre>
+    <language>yi</language>
+    <publishing_date>2003-11-01</publishing_date>
+    <release_date>2003-11-01</release_date>
+</book>
+<book>
+    <title>粉妝樓1-10回</title>
+    <Author lastname="Luo" firstname="Guanzhong" dates="1330-1400"></Author>
+    <genre>History</genre>
+    <country>China</country>
+    <language>zh</language>
+    <publishing_date>2003-10-01</publishing_date>
+    <release_date>2003-10-01</release_date>
+</book>
+<book>
+    <title>Όραμα και Μεταμόρφωση : Μια εισαγωγή στο Ευγενές Οκταπλό Μονοπάτι του Βούδδα</title>
+    <Author lastname="Sangharakshita" firstname="Bhikshu"></Author>
+    <genre>Philosophy</genre>
+    <language>el</language>
+    <publishing_date>2005-07-07</publishing_date>
+    <release_date>2005-07-07</release_date>
+</book>
+<book>
+    <title>Il pastor fido in lingua napolitana</title>
+    <Author lastname="Guarini" firstname="Battista" dates ="1538-1612"></Author>
+    <genre>Drama</genre>
+    <genre>Adaptations</genre>
+    <language>nap</language>
+    <publishing_date>2006-02-23</publishing_date>
+    <release_date>2006-02-23</release_date>
+</book>
+<book>
+    <title>Le Horror Altissime</title>
+    <Author lastname="Doyle" firstname="Arthur Conan" dates ="1859-1930"></Author>
+    <genre>Horror</genre>
+    <genre>Fiction</genre>
+    <language>ia</language>
+    <publishing_date>2005-05-31</publishing_date>
+    <release_date>2005-05-31</release_date>
+</book>
 </ebooks>

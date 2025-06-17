@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:complexType name="AuthorType">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="lastname" type="xs:string"/>
+      <xs:attribute name="firstname" type="xs:string"/>
+      <xs:attribute name="dates" type="xs:string" use="optional"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name = "bookType">
+  <xs:sequence>
+    <!-- Title element -->
+    <xs:element name="title" type="xs:string"/>
+    <!-- Author element -->
+    <xs:element name="Author" type ="AuthorType" minOccurs="0" maxOccurs="unbounded"/>
+    <!-- Translator element -->
+    <xs:element name="Translator" type ="AuthorType" minOccurs="0" maxOccurs="unbounded"/>
+    <!-- Editor element -->
+    <xs:element name="Editor" type ="AuthorType" minOccurs="0" maxOccurs="unbounded"/>
+    <!-- Genre element -->
+    <xs:element name="genre" type="xs:string" minOccurs = "1" maxOccurs = "unbounded"/>
+    <!-- country element -->
+    <xs:element name="country" type="xs:string" minOccurs = "0" maxOccurs = "unbounded"/>
+    <!-- language element-->
+    <xs:element name="language" type="xs:string" default="en" minOccurs = "1" maxOccurs = "unbounded"/>
+    <!-- Publishing date element -->
+    <xs:element name="publishing_date" type="xs:date" minOccurs = "1" maxOccurs = "1"/>
+    <!-- Release date element -->
+    <xs:element name="release_date" type="xs:date" minOccurs = "1" maxOccurs = "unbounded"/>
+  </xs:sequence>
+</xs:complexType>          
+
+  <!-- Root element -->
+<xs:element name="ebooks">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Book element -->
+        <xs:element name="book" type ="bookType" minOccurs = "1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
