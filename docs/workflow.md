@@ -54,3 +54,25 @@ JOIN media_type m ON b.id = m.book_id AND m.vocabulary = 'rdamedia'
 JOIN carrier_type cr ON b.id = cr.book_id AND cr.vocabulary = 'rdacarrier'
 GROUP BY a.name, c.content, m.media, cr.type
 ORDER BY a.name;
+
+
+
+for ebooks.xml based usecase:
+
+1. One author can have multiple books written {List authors with multiple books}
+-> Arthur Benjamin
+2. One book can have multiple authors {List books with multiple authors}
+ -> Author count =>2
+3. One author can have multiple genre {list books of Author A with respective genre}
+-> Arthur Benjamin
+4. A book can have multiple genre references { list book with genre = history, translation, fiction , romance}
+-> genre: History and Law
+-> History and Oratory
+-> Non-Fiction but not a History
+5. list of countries for which books historical books are availble {genre = "history"}
+6. list of countries with count of books
+7. List of languages
+8. author with no dates available
+9. books that are translated
+10. authors with date 1915
+-> Klein charles and Richard Marsh
