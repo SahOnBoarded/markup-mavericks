@@ -7,7 +7,7 @@ Usecases/research questionnaire:
 1. One author can have multiple books written {List authors with multiple books}
 -> Arthur Benjamin
 SELECT * FROM books
-WHERE author ILIKE '%Arthur Benjamin%'
+WHERE author ILIKE '%Shakespeare%'
 ORDER BY title
 LIMIT 5;
 2. 4. A book can have multiple genre references { list book with genre = history, translation, fiction , romance}
