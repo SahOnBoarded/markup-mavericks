@@ -6,56 +6,73 @@ Workflow:
 Usecases/research questionnaire:
 1. One author can have multiple books written {List authors with multiple books}
 -> Arthur Benjamin
-SELECT * FROM books
-WHERE author ILIKE '%Shakespeare%'
-ORDER BY title
+SELECT t.title
+FROM titles t
+JOIN record_authors ra ON t.record_id = ra.record_id
+JOIN authors a ON ra.author_id = a.id
+WHERE a.name ILIKE '%Shakespeare%'
+ORDER BY t.title
 LIMIT 5;
+
 2. 4. A book can have multiple genre references { list book with genre = history, translation, fiction , romance}
-SELECT DISTINCT b.title
-FROM books b
-JOIN book_subjects s ON b.id = s.book_id
-WHERE s.subject ILIKE '%Drama%'
-   OR s.subject ILIKE '%History%';
+SELECT DISTINCT t.title
+FROM titles t
+JOIN record_subjects rs ON t.record_id = rs.record_id
+JOIN subjects s ON rs.subject_id = s.id
+WHERE s.tag ILIKE '%History%'
+   OR s.tag ILIKE '%Translation%'
+   OR s.tag ILIKE '%Fiction%'
+   OR s.tag ILIKE '%Romance%';
 
 3. list of books title, author and url having reading level as easy to read
-SELECT b.title, a.name AS author, b.url
-FROM books b
-JOIN authors a ON b.id = a.book_id
-WHERE b.reading_description ILIKE '%easy to read%';
+SELECT t.title, a.name AS author, r.external_url
+FROM titles t
+JOIN record_authors ra ON t.record_id = ra.record_id
+JOIN authors a ON ra.author_id = a.id
+JOIN records r ON t.record_id = r.id
+JOIN record_reading_levels rrl ON r.id = rrl.record_id
+JOIN reading_levels rl ON rrl.reading_level_id = rl.id
+WHERE rl.description ILIKE '%easy to read%';
 
 4. list of books ordered by author and limit to 20 where subject has BC or BCE in it
-SELECT b.title, a.name AS author, s.subject
-FROM books b
-JOIN authors a ON b.id = a.book_id
-JOIN subjects s ON b.id = s.book_id
-WHERE s.subject ILIKE '%BC%' OR s.subject ILIKE '%BCE%'
+SELECT t.title, a.name AS author, s.tag AS subject
+FROM titles t
+JOIN record_authors ra ON t.record_id = ra.record_id
+JOIN authors a ON ra.author_id = a.id
+JOIN record_subjects rs ON t.record_id = rs.record_id
+JOIN subjects s ON rs.subject_id = s.id
+WHERE s.tag ILIKE '%BC%' OR s.tag ILIKE '%BCE%'
 ORDER BY a.name
 LIMIT 20;
 
+
 5. One book can have multiple authors {List books with multiple authors}  Author count >=2
- SELECT b.title, STRING_AGG(a.name, ', ') AS authors
-FROM books b
-JOIN authors a ON b.id = a.book_id
-GROUP BY b.id, b.title
+SELECT t.title, STRING_AGG(a.name, ', ') AS authors
+FROM titles t
+JOIN record_authors ra ON t.record_id = ra.record_id
+JOIN authors a ON ra.author_id = a.id
+GROUP BY t.record_id, t.title
 HAVING COUNT(a.id) >= 2
-ORDER BY b.title
+ORDER BY t.title
 LIMIT 100;
 
 6. list the authors with ContentType as rdacontent, mediatype as rdamedia, carriertype as rdacarried, group them accordingly sorted by author
 SELECT 
     a.name AS author,
-    c.content AS content_type,
-    m.media AS media_type,
-    cr.type AS carrier_type
+    ct.content AS content_type,
+    mt.media AS media_type,
+    crt.type AS carrier_type
 FROM authors a
-JOIN books b ON a.book_id = b.id
-JOIN content_type c ON b.id = c.book_id AND c.vocabulary = 'rdacontent'
-JOIN media_type m ON b.id = m.book_id AND m.vocabulary = 'rdamedia'
-JOIN carrier_type cr ON b.id = cr.book_id AND cr.vocabulary = 'rdacarrier'
-GROUP BY a.name, c.content, m.media, cr.type
+JOIN record_authors ra ON a.id = ra.author_id
+JOIN records r ON ra.record_id = r.id
+JOIN record_content_types rct ON r.id = rct.record_id
+JOIN content_types ct ON rct.content_type_id = ct.id AND ct.vocabulary = 'rdacontent'
+JOIN record_media_types rmt ON r.id = rmt.record_id
+JOIN media_types mt ON rmt.media_type_id = mt.id AND mt.vocabulary = 'rdamedia'
+JOIN record_carrier_types rcrt ON r.id = rcrt.record_id
+JOIN carrier_types crt ON rcrt.carrier_type_id = crt.id AND crt.vocabulary = 'rdacarrier'
+GROUP BY a.name, ct.content, mt.media, crt.type
 ORDER BY a.name;
-
-
 
 for ebooks.xml based usecase:
 
