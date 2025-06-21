@@ -69,11 +69,14 @@ return
     return replace($date, ".*?(\\d{4}-\\d{2}-\\d{2}).*", "$1")
   }</ReleaseDate>
   <Title>{
-  let $title := $record/marc:datafield[@tag="245"]/marc:subfield[@code="a"]/text()
+  let $title := $record/marc:datafield[@tag="245"]/marc:subfield[@code="a"]
   let $titleContinued := $record/marc:datafield[@tag="245"]/marc:subfield[@code="b"]
-  return if (exists($titleContinued))
-    then concat($title[0], " ", $titleContinued[0]/text())
-    else $title
+  let $titleStr := string-join($title, " ")
+  let $titleContStr := string-join($titleContinued, " ")
+  return
+    if (normalize-space($titleContStr) != "")
+    then concat($titleStr, " ", $titleContStr)
+    else $titleStr
   }</Title>
   <Language>
       <Code>{$record/marc:datafield[@tag="041"]/marc:subfield[@code="a"]/text()}</Code>

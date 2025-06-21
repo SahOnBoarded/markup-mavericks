@@ -67,6 +67,9 @@ def writeRecordsToDb(dbName: str = None):
             "credits": getText("Credits")
         }
 
+        if data["reading_score"] is None:
+            continue
+
         cursor.execute("""
             INSERT INTO records (
                 title, date_of_creation, release_date, description, url,
