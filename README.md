@@ -1,6 +1,9 @@
 Text Technology Project
 
-Authors:
+Team Members:
+Aldrin Joe
+Sahana Korody Manjunatha
+Vedant Puranik
 
 
 
