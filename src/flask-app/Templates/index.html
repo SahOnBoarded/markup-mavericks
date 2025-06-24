@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gutenberg Metadata Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #9CAF88;
+            background-image: radial-gradient(circle at 1px 1px, #ccc 1px, transparent 0);
+            background-size: 20px 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .header {
+            background: url("/static/Book.png") center/cover no-repeat;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 0 0 1rem 1rem;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 10px black;
+        }
+
+        .book-thumb {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📚 Gutenberg Metadata Explorer</h1>
+        <p class="lead">Explore timeless classics from the world's oldest digital library</p>
+    </div>
+
+    <div class="container py-4">
+        <div class="text-center mb-4">
+            <img src="/static/Reading.png" alt="Child reading a book in library" class="img-fluid rounded" style="max-height: 200px;">
+        </div>
+
+        <div class="row align-items-start mb-4">
+            <div class="col-md-4">
+                <div class="fw-bold fs-5 mb-2 text-center">
+                    🔷 What are the books related to <br> a particular subject entered here?
+                </div>
+                <input type="text" id="leftQuery" class="form-control mb-2" placeholder="e.g. Drama, History">
+                <div class="d-grid">
+                    <button class="btn btn-primary">🔍 Search</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="fw-bold fs-5 mb-2 text-center">
+                    🟩 What are the top 10 easiest to <br> read books from a particular language?
+                </div>
+                <select id="middleQuery" class="form-control mb-2"></select>
+                <div class="d-grid">
+                    <button class="btn btn-primary" onclick="submitSearch()">🔍 Search</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="fw-bold fs-5 mb-2 text-center">
+                    📄 Search for books by author <br> name entered here.
+                </div>
+                <input type="text" id="rightQuery" class="form-control mb-2" placeholder="e.g. Shakespeare">
+                <div class="d-grid">
+                    <button class="btn btn-primary" id="author-search-btn">🔍 Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="fade-in"></div>
+
+        <div class="text-center">
+            <img src="/static/Book Tree.png" alt="Inspirational books stack with quotes" class="img-fluid rounded-4" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        const leftInput = document.getElementById('leftQuery');
+        const middleInput = document.getElementById('middleQuery');
+        const rightInput = document.getElementById('rightQuery');
+
+        // Allow only one active input at a time
+        leftInput.addEventListener('input', () => {
+            middleInput.value = '';
+            rightInput.value = '';
+        });
+
+        middleInput.addEventListener('input', () => {
+            leftInput.value = '';
+            rightInput.value = '';
+        });
+
+        rightInput.addEventListener('input', () => {
+            leftInput.value = '';
+            middleInput.value = '';
+        });
+
+        document.querySelector('#leftQuery + .d-grid button').addEventListener('click', async () => {
+            const query = leftInput.value.trim();
+            const res = await fetch(`/subject?query=${encodeURIComponent(query)}`);
+            const data = await res.json();
+            displayResults(data);
+        });
+
+        document.querySelector('#middleQuery + .d-grid button').addEventListener('click', async () => {
+            const query = document.getElementById('middleQuery').value;
+            // const query = middleInput.value.trim();
+            const res = await fetch(`/language?query=${encodeURIComponent(query)}`);
+            const data = await res.json();
+            displayResults(data);
+        });
+
+        document.getElementById('author-search-btn').addEventListener('click', async () => {
+            const query = rightInput.value.trim();
+            const res = await fetch(`/author?query=${encodeURIComponent(query)}`);
+            const data = await res.json();
+            displayResults(data);
+        });
+
+        // Fetch languages from backend and populate the dropdown
+        fetch('/unique-languages')
+            .then(response => response.json())
+            .then(data => {
+                const select = document.getElementById('middleQuery');
+                data.forEach(lang => {
+                    const option = document.createElement('option');
+                    option.value = lang.code;  // uses same code from the database
+                    option.textContent = lang.name;
+                    select.appendChild(option);
+                });
+            });
+
+        function displayResults(data) {
+            const container = document.getElementById('results');
+            if (data.length === 0) {
+                container.innerHTML = '<p class="text-muted">No results found.</p>';
+                return;
+            }
+
+            container.innerHTML = `
+                <div class="table-responsive fade-in mt-4">
+                    <table class="table table-hover table-bordered bg-white shadow rounded">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Title</th>
+                                <th>Authors</th>
+                                <th>Reading Score</th>
+                                <th>Publication Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${data.map(book => `
+                                <tr>
+                                    <td>${book.title}</td>
+                                    <td>${book.authors}</td>
+                                    <td>${book.reading_score || '—'}</td>
+                                    <td>${book.publication_date || '—'}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>`;
+        }
+    </script>
+</body>
+</html>

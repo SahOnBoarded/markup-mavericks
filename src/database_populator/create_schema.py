@@ -68,8 +68,8 @@ tableQueries = [
     class_id INT REFERENCES congress_classification(id) ON DELETE CASCADE,
     PRIMARY KEY (record_id, class_id)
     )
-    '''
-
+    ''',
+    '''ALTER TABLE record_authors ADD CONSTRAINT unique_record_author UNIQUE (record_id, author_id);'''
 ]
 
 '''
