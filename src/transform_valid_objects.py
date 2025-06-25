@@ -1,5 +1,6 @@
 from saxonche import PySaxonProcessor
 import os
+import time
 
 INPUT_FILE = '<put abs path to output file written after running extract_valid_objects.xml>'
 OUTPUT_FILE = '<put abs path to where the output of this file would be written to>'
@@ -100,9 +101,10 @@ with PySaxonProcessor(license=False) as proc:
     xpathProc.declare_namespace('marc', 'http://www.loc.gov/MARC21/slim')
     recordNodes = xpathProc.evaluate('//marc:record')
     print('Found {} <record> elements.'.format(recordNodes.size))
+    print('Tranforming records...')
 
     transformedXmlObjects = []
-
+    startTime = time.time()
     for record in recordNodes:
         xqueryProc = proc.new_xquery_processor()
         xqueryProc.set_query_content(xquery)
@@ -111,9 +113,10 @@ with PySaxonProcessor(license=False) as proc:
         result = result.replace('<?xml version="1.0" encoding="UTF-8"?>','')
         transformedXmlObjects.append(result)
 
+    finishTime = time.time()
     finalOutput = '<?xml version=\"1.0\" encoding=\"UTF-8\"?><Records>\n' + "\n".join(transformedXmlObjects) + '\n</Records>'
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as output:
         output.write(finalOutput)
 
-    print('Transformation complete. Output written to: {}'.format(OUTPUT_FILE))
+    print('Transformation complete in {} seconds. Output written to: {}'.format((finishTime - startTime),OUTPUT_FILE))

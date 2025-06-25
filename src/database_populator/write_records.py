@@ -1,8 +1,9 @@
 import psycopg2
 from lxml import etree
+import time
 
 dbName = 'gutenberg_metadata'
-dataFilePath = '<path to transformedRecords.xml>'
+DATA_FILE_PATH = '<path to transformedRecords.xml>'
 
 dbConfig = {
     'user': 'postgres',
@@ -33,9 +34,11 @@ def writeRecordsToDb(dbName: str = None):
     dbConn = connectToDb(dbName)
     cursor = dbConn.cursor()
     
-    tree = etree.parse(dataFilePath)
+    tree = etree.parse(DATA_FILE_PATH)
     records = tree.xpath("//Record")
 
+    print('Writing records to DB...')
+    startTime = time.time()
     for record in records:
         
         def getText(xpathExpression):
@@ -122,9 +125,10 @@ def writeRecordsToDb(dbName: str = None):
             cursor.execute("INSERT INTO record_congress_classes (record_id, class_id) VALUES (%s, %s) ON CONFLICT DO NOTHING", (recordId, classId))
 
     dbConn.commit()
+    finishTime = time.time()
     cursor.close()
     dbConn.close()
-    print("XML data writen to DB successfully.")
+    print("XML data writen to DB successfully in {} seconds".format((finishTime - startTime)))
 
 
 writeRecordsToDb(dbName)
