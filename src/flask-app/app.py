@@ -112,7 +112,6 @@ def search_by_language():
 def search_by_author():
     author_query = request.args.get('query', '').strip()
     
-    print("query received: {} .".format(author_query))
     if not author_query:
         return jsonify([])
 
@@ -144,4 +143,4 @@ def search_by_author():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

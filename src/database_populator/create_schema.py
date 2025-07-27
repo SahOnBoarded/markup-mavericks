@@ -22,12 +22,6 @@ tableQueries = [
     catalog_details VARCHAR(50),
     resource_type VARCHAR(10),
     medium VARCHAR(10),
-    content_type VARCHAR(50),
-    content_vocab VARCHAR(50),
-    media_type VARCHAR(50),
-    media_vocab VARCHAR(50),
-    carrier_type VARCHAR(100),
-    carrier_vocab VARCHAR(50),
     reading_score NUMERIC(5,2),
     reading_education VARCHAR(50),
     reading_description TEXT,
@@ -57,17 +51,6 @@ tableQueries = [
     subject_id INT REFERENCES subjects(id) ON DELETE CASCADE,
     PRIMARY KEY (record_id, subject_id)
     );  
-    ''',
-    '''CREATE TABLE congress_classification (
-    id SERIAL PRIMARY KEY,
-    class VARCHAR(25)
-    );
-    ''',
-    '''CREATE TABLE record_congress_classes (
-    record_id INT REFERENCES records(id) ON DELETE CASCADE,
-    class_id INT REFERENCES congress_classification(id) ON DELETE CASCADE,
-    PRIMARY KEY (record_id, class_id)
-    )
     ''',
     '''ALTER TABLE record_authors ADD CONSTRAINT unique_record_author UNIQUE (record_id, author_id);'''
 ]
