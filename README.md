@@ -25,13 +25,13 @@
 3. Edit `src/extract_valid_objects.py` and set the values of: 
     - `XML_PATH`: Absolute path of pgmarc.xml on your local system.
     - `XSD_PATH`: Absolute path of `resources/record_schema.xsd` on your local system.
-    - `OUTPUT_PATH`: Absolute path of the output file (including the name of the file and .xml extension e.g. "path/extractedObjects.xml") on your local system that will store results of this program.
+    - `OUTPUT_PATH`: Absolute path of the output file (including the name of the file and .xml extension e.g. "path/extractedObjects.xml") that would be created on your local system and will store results of this program.
 4. Edit `src/transform_valid_objects.py` and set the values of:
     - `INPUT_FILE`: Same as the `OUTPUT_PATH` from the previous step.
-    - `OUTPUT_FILE`: Absolute path of the output file (including the name of the file and .xml extension e.g. "path/transformedObjects.xml") on your local system that will store results of this program.
+    - `OUTPUT_FILE`: Absolute path of the output file (including the name of the file and .xml extension e.g. "path/transformedObjects.xml") that would be created on your local system and will store results of this program.
 5. Edit `src/database_populator/create_schema.py` and set the values of:
     - `dbConfig['password']`: Enter password of your local PostgreSQL setup.
-    - Change other fields in the `dbConfig` object if you must to get access to the user 'postgres' inside PostgreSQL server.
+    - Change other fields in the `dbConfig` object if you must to get access to the user 'postgres' inside your PostgreSQL server.
 6. Edit `src/database_populator/write_records.py` and set the values of:
     - `dbConfig['password']`: Enter password of your local PostgreSQL setup.
     - `DATA_FILE_PATH`: Same as the value of `OUTPUT_FILE` from step 4.
