@@ -6,24 +6,6 @@
 - Sahana Korody Manjunatha (3698008)
 - Vedant Puranik (3703786)
 
-## Overview
-
-### Description
-
-- Project Gutenberg is a publicly available, free-to-use digital library that offers eBooks free of cost. This is the world’s oldest ebook store with regular updates. All of the Project Gutenberg metadata is collected together and made available as an XML file which is regularly updated by their team with changes to the content (number of books, actual information about each book, etc.) and the schema of each book object.
-- Each ebook record contains several fields like: Title, Digital Release Date, Description, Reading Score, Authors, Language, Subjects, etc.
-- We collect the **XML data**, verify it against an **XML schema**, transform it using **XQuery**, insert it into a **Postgres** database and serve it via an **HTML interface**.
-
-### Access Phase Output (Research Questions)
-
-We answer three questions to get insight into the books data that was **collected** and **prepared**:
-
-1. What are some books related to a particular subject (like Drama, History, Love, etc.): This is a search made across languages to offer the user a list of books related to a specific theme.
-2. What are the top 10 easiest to read books from a particular language?: The user chooses a language from a number of languages made available as a drop-down menu and the easiest to read books (sorted according to Reading Ease Score) are shown to him/her. `pycountry` is used to derive the language names from their codes stored in the database.
-3. Search for books by author name: The user can input a particular author name to view the books written by that author.
-
-**NOTE**: The actual database queries and the ER diagram can be found inside the `docs` folder. To fit the results of each query on a computer screen we only render a subset of the entries for the first and third question.
-
 ## Steps to run the Collect-Prepare-Access phases
 
 ### Collect
